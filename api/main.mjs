@@ -15,6 +15,10 @@ export default async function main(req, res) {
     );
     code = code.replace("</body>", `<script src="/codeinthewind.js"></script>`);
     res.setHeader("Content-Type", "text/html");
+    res.setHeader(
+      "Cache-Control",
+      "public, s-maxage=60, stale-while-revalidate"
+    );
     res.send(code);
   } catch (e) {
     console.error(e);
