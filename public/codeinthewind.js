@@ -67,6 +67,7 @@ function codeInTheWind() {
         const { editorId, initialCode } = data.initializeEditorSync;
         if (editorId !== editorId) return;
         editor.setValue(initialCode);
+        synchronizationStarted = true;
       }
     });
 
