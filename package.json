@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "vercel": "^33.6.1"
+  },
+  "scripts": {
+    "build": "true"
+  },
+  "type": "module"
+}
