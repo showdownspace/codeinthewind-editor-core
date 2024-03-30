@@ -11,8 +11,9 @@ export default async function main(req, res) {
         header > div:first-child {
           visibility: hidden;
         }
-        main > div:first-child > div:first-child > button:first-child ~ button {
-          visibility: hidden;
+        main > div:first-child > div:first-child > button:first-child + button,
+        main > div:first-child > div:first-child > button:first-child + button + button {
+          display: none;
         }
     </style></head`
     );
